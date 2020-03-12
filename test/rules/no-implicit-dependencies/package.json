@@ -2,7 +2,7 @@
     "name": "test",
     "version": "1.0.0",
     "dependencies": {
-        "foo": "latest",
+        "foo": "1.0.0",
         "bar": "latest",
         "@angular/core": "4.4.5",
         "@angular/common": "4.4.4"
