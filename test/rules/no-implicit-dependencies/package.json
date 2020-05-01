@@ -1,19 +1,25 @@
 {
-    "name": "test",
-    "version": "1.0.0",
-    "dependencies": {
-        "foo": "latest",
-        "bar": "latest",
-        "@angular/core": "4.4.5",
-        "@angular/common": "4.4.4"
-    },
-    "devDependencies": {
-        "chai": "latest"
-    },
-    "peerDependencies": {
-        "typescript": "2.5.3"
-    },
-    "optionalDependencies": {
-        "fsevents": "latest"
-    }
+  "name": "test",
+  "version": "1.0.0",
+  "dependencies": {
+    "foo": "latest",
+    "bar": "latest",
+    "@angular/core": "4.4.5",
+    "@angular/common": "4.4.4",
+    "snyk": "^1.316.1"
+  },
+  "devDependencies": {
+    "chai": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "2.5.3"
+  },
+  "optionalDependencies": {
+    "fsevents": "latest"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
